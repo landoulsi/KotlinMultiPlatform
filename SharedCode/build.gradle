@@ -57,7 +57,7 @@ kotlin {
             }
             //compilations.main.outputKinds('FRAMEWORK')
             compilations.each {
-                it.extraOpts("-linkerOpts", "-lsqlite3")
+                it.kotlinOptions.freeCompilerArgs += ["-linker-options", "-lsqlite3"]
             }
         }
 
@@ -175,7 +175,7 @@ kotlin {
             dependencies {
                 implementation kotlin('test-common')
                 implementation kotlin('test-annotations-common')
-                implementation "io.mockk:mockk:1.9.3"
+                implementation "io.mockk:mockk:1.10.0"
             }
         }
 
@@ -189,7 +189,7 @@ kotlin {
                 implementation "org.jetbrains.kotlinx:kotlinx-serialization-runtime:$serializer_version"
                 implementation "com.soywiz:klock-android:$klock_version"
 
-                implementation "io.mockk:mockk:1.9.3"
+                implementation "io.mockk:mockk:1.10.0"
             }
         }
 

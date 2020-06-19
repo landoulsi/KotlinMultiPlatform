@@ -10,7 +10,7 @@ application {
 
 dependencies {
     // kotlin jdk
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.50")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.72")
     implementation(project(":SharedCode"))
     //implementation("com.bugsnag:bugsnag:${Versions.bugsnagJvm}")
 }
